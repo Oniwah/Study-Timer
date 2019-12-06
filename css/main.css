@@ -1,0 +1,422 @@
+/*
+COLOR SCHEME
+#005582
+#0086ad
+#00c2c7
+#97ebdb
+#daf8e3
+BACKGROUND GREY:
+
+*/
+body {
+    background: #dcdfe0;
+}
+/* Navigation bar style */
+.mainmenu-wrapper {
+    background-color: #00c2c7;
+    border-bottom: 8px solid #97ebdb;
+    padding: 20px 0px 5px 0px;
+}
+
+h1 {
+    color: #53555c;
+    font-weight: 800;
+    border-bottom: 0px solid #53555c;
+    line-height: 1.7em;
+    padding-top: 10px;
+}
+
+h3 {
+    color: #53555c;
+    font-size: 1.5em;
+}
+
+a {
+    color: #3e7ca2;
+}
+a:hover {
+    color: #2f556d;
+}
+
+.logo {
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    display: block;
+}
+.logo a {
+    border-right: 1px solid #E8E8E8;
+    padding: 0px 30px 0px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #53555c;
+    text-transform: uppercase;
+}
+.logo a:hover, .logo a:focus {
+    color: #4f8db3;
+    text-decoration: none;
+}
+
+.mainmenu {
+    width: 50%;
+    float: left;
+}
+.mainmenu > ul, .mainmenu .mainmenu-submenu-inner {
+    margin: 0 auto;
+}
+.mainmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.mainmenu > ul > li, .mainmenu .mainmenu-submenu-inner > li {
+    display: inline-block;
+}
+/* setting color */
+.mainmenu > ul > li > a, .mainmenu .mainmenu-submenu-inner > li > a {
+    font-size: 14px;
+    padding: 1.15em 1.5em;
+    color: #53555c;
+    display: inline-block;
+    text-decoration: none;
+}
+.mainmenu > ul > li > a:hover, .mainmenu .mainmenu-submenu-inner > li > a:hover {
+    color: #4f8db3;
+    text-decoration: none;
+}
+
+.section-white {
+    background: #FFF;
+}
+.section {
+    padding: 40px 0px 40px 0px;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    background: #FFF;
+}
+
+/* break colors */
+.btn-primary {
+    color: #fff;
+    background-color: #0086ad;
+    border-color: #000;
+}
+/*break color on mouse hover */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    color: #fff;
+    background-color: #00c2c7;
+    border-color: #000;
+    outline: 0;
+}
+
+.settings-notice, .timer-history {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #F1F6F9;
+    border: 1px solid #e0e5e8;
+    border-radius: 4px;
+}
+.settings-notice ul li{
+    margin-bottom: 10px;
+}
+.settings-notice ul li:first-of-type{
+    margin-top: 23px;
+}
+.timer-history .nav-pills li{
+    width: 49%;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    text-align: center;
+}
+.shortcuts{
+    text-align: center;
+}
+
+/*
+todo list css
+*/
+
+.noFill {
+  fill: none;
+}
+
+.quote{
+    position: relative;
+    text-align: center;
+    background: #dcdfe0;
+}
+
+header {
+  width: 90%;
+  left: 5%;
+  height: 80px;
+  position: relative;
+  top: 0px;
+  padding: 15px;
+  z-index: 5;
+  background: #0086ad;
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+header input {
+  width: 100%;
+  height: 50px;
+  float: left;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  text-indent: 18px;
+  padding: 0 60px 0 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px 25px 25px 5px;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+header input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header input:-moz-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header input::-moz-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header button {
+  width: 50px;
+  height: 50px;
+
+  position:absolute;
+  top:15px;
+  right:15px;
+  z-index:2;
+
+  border-radius: 25px;
+  background: #fff;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+header button svg {
+  width: 16px;
+  height: 16px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -8px 0 0 -8px;
+}
+
+header button svg .fill {
+  fill: #25b99a;
+}
+
+/* list */
+.todo_container {
+  width: 100%;
+  position: relative;
+  float: left;
+  padding: 15px;
+}
+
+ul.todo {
+  width: 100%;
+  float: left;
+  list-style-type: none;
+}
+
+ul.todo li {
+  width: 100%;
+  min-height: 50px;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  line-height: 22px;
+
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);
+  margin: 0 0 10px 0;
+  padding: 14px 100px 14px 14px;
+  word-break: break-word;
+}
+
+ul.todo li:last-of-type {
+  margin: 0;
+}
+
+ul.todo li .buttons {
+  width: 100px;
+  height: 50px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+ul.todo li .buttons button {
+  width: 50px;
+  height: 50px;
+  float: left;
+  background: none;
+  position: relative;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+ul.todo li .buttons button:last-of-type:before {
+  content: '';
+  width: 1px;
+  height: 30px;
+  background: #edf0f1;
+
+  position: relative;
+}
+
+ul.todo li .buttons button svg {
+  width: 22px;
+  height: 22px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -11px 0 0 -11px;
+}
+
+ul.todo li .buttons button.complete svg {
+  border-radius: 11px;
+  border: 1.5px solid #25b99a;
+
+  transition: background 0.2s ease;
+}
+
+ul.todo#completed li .buttons button.complete svg {
+  background: #25b99a;
+  border: 0px;
+}
+
+ul.todo:not(#completed) li .buttons button.complete:hover svg {
+  background: rgba(37, 185, 154, 0.75);
+}
+
+ul.todo:not(#completed) li .buttons button.complete:hover svg .fill {
+  fill: #fff;
+}
+
+ul.todo#completed li .buttons button.complete svg .fill {
+  fill: #fff;
+}
+
+ul.todo li .buttons button svg .fill {
+  transition: fill 0.2s ease;
+}
+
+ul.todo li .buttons button.remove svg .fill {
+  fill: #c0cecb;
+}
+
+ul.todo li .buttons button.remove:hover svg .fill {
+  fill: #e85656;
+}
+
+ul.todo li .buttons button.complete svg .fill {
+  fill: #25b99a;
+}
+
+ul.todo#completed {
+  position: relative;
+  left: -26px;
+
+}
+ul.todo#todo {
+  position: relative;
+  left: -26px;
+
+}
+
+ul.todo#completed:before {
+  content: '';
+  width: 150px;
+  height: 1px;
+  background: #d8e5e0;
+
+  position: relative;
+  top: 30px;
+  left: 50%;
+
+  margin: 0 0 0 -75px;
+}
+
+ul.todo#todo:empty:after {
+  content: 'You have nothing to do at the moment!';
+  margin: 15px 0 0 0;
+  position: relative;
+  left: -10px;
+}
+
+ul.todo#completed:empty:after {
+  content: 'You have yet to complete any tasks.';
+  position: relative;
+  left: -15px;
+}
+
+ul.todo#todo:after,
+ul.todo#completed:after {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+}
+.center-todo {
+    text-align: center;
+}
+.center-completed {
+    text-align: center;
+}
+
+#gear {
+    float: right;
+    border: none;
+    margin-bottom: 5px;
+}
+
+#message {
+    text-align:center;
+    background-color: #00c2c7;
+    border-bottom: 8px solid #97ebdb;
+    padding: 15px;
+
+}

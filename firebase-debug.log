@@ -1,0 +1,192 @@
+[debug] [2019-12-06T05:49:06.773Z] ----------------------------------------------------------------------
+[debug] [2019-12-06T05:49:06.775Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sirin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-12-06T05:49:06.775Z] CLI Version:   7.8.1
+[debug] [2019-12-06T05:49:06.775Z] Platform:      win32
+[debug] [2019-12-06T05:49:06.775Z] Node Version:  v12.13.0
+[debug] [2019-12-06T05:49:06.776Z] Time:          Thu Dec 05 2019 21:49:06 GMT-0800 (Pacific Standard Time)
+[debug] [2019-12-06T05:49:06.776Z] ----------------------------------------------------------------------
+[debug] [2019-12-06T05:49:06.776Z] 
+[debug] [2019-12-06T05:49:06.783Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-06T05:49:06.784Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\sirin\Desktop\StudyTimer
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using study-timer-93849.
+[debug] [2019-12-06T05:49:17.235Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/study-timer-93849  
+ 
+[debug] [2019-12-06T05:49:17.395Z] <<< HTTP RESPONSE 200
+[info] 
+=== Firestore Setup
+[debug] [2019-12-06T05:49:17.402Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-06T05:49:17.404Z] > authorizing via signed-in user
+[debug] [2019-12-06T05:49:17.405Z] [iam] checking project study-timer-93849 for permissions ["firebase.projects.get"]
+[debug] [2019-12-06T05:49:17.406Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/study-timer-93849:testIamPermissions  
+
+[debug] [2019-12-06T05:49:17.513Z] <<< HTTP RESPONSE 200
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2019-12-06T05:49:22.024Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/study-timer-93849/releases?pageSize=10&pageToken=  
+ 
+[debug] [2019-12-06T05:49:22.415Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-06T05:49:22.416Z] Found ruleset: projects/study-timer-93849/rulesets/450666ab-67c7-41f1-acbe-aacf8dad26f0
+[debug] [2019-12-06T05:49:22.416Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/study-timer-93849/rulesets/450666ab-67c7-41f1-acbe-aacf8dad26f0  
+ 
+[debug] [2019-12-06T05:49:22.706Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-06T05:49:22.933Z] Error: EISDIR: illegal operation on a directory, open 'C:\Users\sirin\Desktop\StudyTimer\y'
+    at Object.openSync (fs.js:440:3)
+    at Object.writeFileSync (fs.js:1265:35)
+    at Config.writeProjectFile (C:\Users\sirin\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:179:8)
+    at C:\Users\sirin\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\firestore\rules.js:55:31
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-12-06T05:49:34.082Z] ----------------------------------------------------------------------
+[debug] [2019-12-06T05:49:34.084Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sirin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-12-06T05:49:34.084Z] CLI Version:   7.8.1
+[debug] [2019-12-06T05:49:34.084Z] Platform:      win32
+[debug] [2019-12-06T05:49:34.084Z] Node Version:  v12.13.0
+[debug] [2019-12-06T05:49:34.085Z] Time:          Thu Dec 05 2019 21:49:34 GMT-0800 (Pacific Standard Time)
+[debug] [2019-12-06T05:49:34.085Z] ----------------------------------------------------------------------
+[debug] [2019-12-06T05:49:34.085Z] 
+[debug] [2019-12-06T05:49:34.092Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-06T05:49:34.092Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\sirin\Desktop\StudyTimer
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using study-timer-93849.
+[debug] [2019-12-06T05:49:52.760Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/study-timer-93849  
+ 
+[debug] [2019-12-06T05:49:52.931Z] <<< HTTP RESPONSE 200
+[info] 
+=== Firestore Setup
+[debug] [2019-12-06T05:49:52.934Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-06T05:49:52.935Z] > authorizing via signed-in user
+[debug] [2019-12-06T05:49:52.936Z] [iam] checking project study-timer-93849 for permissions ["firebase.projects.get"]
+[debug] [2019-12-06T05:49:52.936Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/study-timer-93849:testIamPermissions  
+
+[debug] [2019-12-06T05:49:53.038Z] <<< HTTP RESPONSE 200
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2019-12-06T05:49:55.297Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/study-timer-93849/releases?pageSize=10&pageToken=  
+ 
+[debug] [2019-12-06T05:49:55.594Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-06T05:49:55.597Z] Found ruleset: projects/study-timer-93849/rulesets/450666ab-67c7-41f1-acbe-aacf8dad26f0
+[debug] [2019-12-06T05:49:55.598Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/study-timer-93849/rulesets/450666ab-67c7-41f1-acbe-aacf8dad26f0  
+ 
+[debug] [2019-12-06T05:49:55.892Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-06T05:49:55.896Z] Error: EISDIR: illegal operation on a directory, open 'C:\Users\sirin\Desktop\StudyTimer\y'
+    at Object.openSync (fs.js:440:3)
+    at Object.writeFileSync (fs.js:1265:35)
+    at Config.writeProjectFile (C:\Users\sirin\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:179:8)
+    at C:\Users\sirin\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\firestore\rules.js:55:31
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-12-06T06:04:50.430Z] ----------------------------------------------------------------------
+[debug] [2019-12-06T06:04:50.455Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sirin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-12-06T06:04:50.456Z] CLI Version:   7.8.1
+[debug] [2019-12-06T06:04:50.456Z] Platform:      win32
+[debug] [2019-12-06T06:04:50.456Z] Node Version:  v12.13.0
+[debug] [2019-12-06T06:04:50.560Z] Time:          Thu Dec 05 2019 22:04:50 GMT-0800 (Pacific Standard Time)
+[debug] [2019-12-06T06:04:50.560Z] ----------------------------------------------------------------------
+[debug] [2019-12-06T06:04:50.560Z] 
+[debug] [2019-12-06T06:04:50.584Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-06T06:04:50.584Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\sirin\Desktop\StudyTimer
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using study-timer-93849.
+[debug] [2019-12-06T06:05:03.101Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/study-timer-93849  
+ 
+[debug] [2019-12-06T06:05:03.344Z] <<< HTTP RESPONSE 200
+[info] 
+=== Firestore Setup
+[debug] [2019-12-06T06:05:03.355Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-06T06:05:03.356Z] > authorizing via signed-in user
+[debug] [2019-12-06T06:05:03.356Z] [iam] checking project study-timer-93849 for permissions ["firebase.projects.get"]
+[debug] [2019-12-06T06:05:03.357Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/study-timer-93849:testIamPermissions  
+
+[debug] [2019-12-06T06:05:03.509Z] <<< HTTP RESPONSE 200
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2019-12-06T06:05:08.110Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/study-timer-93849/releases?pageSize=10&pageToken=  
+ 
+[debug] [2019-12-06T06:05:08.441Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-06T06:05:08.442Z] Found ruleset: projects/study-timer-93849/rulesets/450666ab-67c7-41f1-acbe-aacf8dad26f0
+[debug] [2019-12-06T06:05:08.442Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/study-timer-93849/rulesets/450666ab-67c7-41f1-acbe-aacf8dad26f0  
+ 
+[debug] [2019-12-06T06:05:08.725Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-06T06:05:08.753Z] Error: EISDIR: illegal operation on a directory, open 'C:\Users\sirin\Desktop\StudyTimer\y'
+    at Object.openSync (fs.js:440:3)
+    at Object.writeFileSync (fs.js:1265:35)
+    at Config.writeProjectFile (C:\Users\sirin\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:179:8)
+    at C:\Users\sirin\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\firestore\rules.js:55:31
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.
